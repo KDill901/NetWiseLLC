@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NetWise Solutions</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --blue: #0057A8;
+      --gray-light: #F9FAFB;
+      --gray-dark: #4B5563;
+      --text-color: #111827;
+      --black: #000;
+    }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Roboto', sans-serif;
+      color: var(--text-color);
+      background: white;
+      line-height: 1.6;
+    }
+    header {
+      background: var(--blue);
+      color: white;
+      padding: 3rem 1rem;
+      text-align: center;
+    }
+    header img {
+      max-width: 100px;
+      margin-bottom: 1rem;
+    }
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+    header p {
+      font-size: 1.25rem;
+    }
+    .section {
+      padding: 4rem 1rem;
+    }
+    .container {
+      max-width: 1000px;
+      margin: auto;
+    }
+    h2 {
+      font-size: 2rem;
+      color: var(--blue);
+      margin-bottom: 1rem;
+    }
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+    }
+    .card {
+      background: white;
+      border: 1px solid #E5E7EB;
+      border-radius: 0.75rem;
+      padding: 2rem;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+      transition: transform 0.2s ease-in-out;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    .contact {
+      background: var(--gray-light);
+    }
+    footer {
+      background: var(--black);
+      color: white;
+      text-align: center;
+      padding: 1rem;
+    }
+    a {
+      color: var(--blue);
+      text-decoration: none;
+    }
+    .cta {
+      background: var(--blue);
+      color: white;
+      text-align: center;
+      padding: 3rem 1rem;
+    }
+    .cta h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+    .cta p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+    }
+    .cta a {
+      background: white;
+      color: var(--blue);
+      padding: 0.75rem 1.5rem;
+      border-radius: 0.5rem;
+      font-weight: bold;
+    }
+    form {
+      display: grid;
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+    input, textarea, button {
+      padding: 0.75rem;
+      border-radius: 0.5rem;
+      border: 1px solid #d1d5db;
+      font-family: 'Roboto', sans-serif;
+    }
+    button {
+      background-color: var(--blue);
+      color: white;
+      font-weight: bold;
+      border: none;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #004080;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <img src="C:\Users\kwelo\OneDrive\Documents\GitHub\Netwise_2025\NetWiseLLC\Images\NetWise_Logo.png" alt="NetWise Solutions Logo">
+      <h1>NetWise Solutions</h1>
+      <p>Your Trusted Partner for IT Support and Network Solutions</p>
+    </div>
+  </header>
+
+  <section class="section about">
+    <div class="container">
+      <h2>About Us</h2>
+      <p>At NetWise Solutions, we help small businesses and remote professionals thrive by providing reliable IT support, efficient network setups, and proactive IT management. Whether it's troubleshooting tech issues, setting up secure connections, or providing full-service IT management, our expert team is here to keep your systems running smoothly.</p>
+    </div>
+  </section>
+
+  <section class="section services">
+    <div class="container">
+      <h2>Our Services</h2>
+      <div class="services-grid">
+        <div class="card">
+          <h3>On-Demand IT Support</h3>
+          <p>Remote or on-site troubleshooting for software, hardware, and network problems. Fast and efficient solutions tailored to your needs.</p>
+        </div>
+        <div class="card">
+          <h3>Managed IT Services</h3>
+          <p>Comprehensive monthly plans that include monitoring, backups, antivirus protection, updates, and priority tech support.</p>
+        </div>
+        <div class="card">
+          <h3>Network Setup & Optimization</h3>
+          <p>Wi-Fi, mesh systems, router configuration, VPNs, and smart device setup. Designed for home offices and growing businesses.</p>
+        </div>
+        <div class="card">
+          <h3>Cloud & Email Setup</h3>
+          <p>Professional configuration of Microsoft 365, Google Workspace, and secure email systems for seamless business communication.</p>
+        </div>
+        <div class="card">
+          <h3>Cybersecurity Basics</h3>
+          <p>Simple, effective security solutions to keep your devices and data safe from malware, ransomware, and phishing attacks.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta">
+    <div class="container">
+      <h2>Need IT Help Today?</h2>
+      <p>Contact NetWise Solutions for fast, friendly, and reliable IT support.</p>
+      <a href="mailto:info@netwisesolutions.com">Get in Touch</a>
+    </div>
+  </section>
+
+  <section class="section contact">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <p><strong>Email:</strong> <a href="mailto:info@netwisesolutions.com">info@netwisesolutions.com</a></p>
+      <p><strong>Phone:</strong> (123) 456-7890</p>
+      <p><strong>Address:</strong> 1234 Elm Street, Anytown, USA</p>
+      <p><strong>Hours:</strong> Mon–Fri, 9am – 6pm</p>
+
+      <form action="https://formsubmit.co/info@netwisesolutions.com" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 NetWise Solutions. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
